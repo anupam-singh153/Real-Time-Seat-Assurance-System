@@ -1,0 +1,21 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: SeatAssuranceSystem
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seat_mgmt_db
+    username: root
+    password: Anu@sql
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    user:
+      name: user
+      password: user
