@@ -9,8 +9,8 @@ A web-based system to manage and optimize college bus seat allocation, ensuring 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone <your-repo-link>
-cd newSeatAssuranceSystem
+git clone https://github.com/anupam-singh153/Real-Time-Seat-Assurance-System
+cd SeatAssuranceSystem
 ```
 
 ### 2️⃣ Backend Setup (Spring Boot)
@@ -74,15 +74,3 @@ npm start
 ![Student Dashboard Screenshot](screenshots/student_dashboard.png)
 
 *(If you have actual screenshots, place them in a `/screenshots` folder and replace the image file names above.)*
-
----
-
-## Important Notes
-- Make sure your local MySQL database is running and matches the schema provided in the project.
-- If using external APIs or third-party services, ensure they are properly configured (API keys, if any).
-- Keep your GitHub repository public or **accessible** during the evaluation period.
-
----
-
-✅ **GitHub Repository Link (to submit):** [Insert your GitHub link here]
-
