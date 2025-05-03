@@ -1,62 +1,88 @@
+
 # Real-Time Seat Assurance System
-A web-based system to manage and optimize bus seat allocation for students and teachers, ensuring they get accurate seat availability updates based on real-time driver feedback.
 
-# Project Overview
-In many colleges, students rush to the bus ground after class because they are unsure if they will get a seat. This creates unnecessary stress, disrupts the last lecture, and leads to unfair seat holding (e.g., leaving bags to reserve seats).
+A web-based system to manage and optimize college bus seat allocation, ensuring students and teachers get real-time seat availability updates through driver feedback.
 
-# The Real-Time Seat Assurance System solves this problem by:
-✅ Providing live seat availability feedback (Green, Orange, Red) from drivers.
-✅ Allowing admins to reassign buses dynamically based on real-time demand.
-✅ Giving students and teachers clear information about their bus routes, stops, and availability.
-✅ Ensuring secure access using role-based authentication.
+---
 
-# Key Features
-Live Driver Feedback
-Drivers provide updates on seat availability using a simple traffic light system:
+## Project Setup & Run Instructions
 
-🟢 Green → Seats available
+### 1️⃣ Clone the Repository
+```bash
+git clone <your-repo-link>
+cd newSeatAssuranceSystem
+```
 
-🟠 Orange → Full (one person per seat)
+### 2️⃣ Backend Setup (Spring Boot)
+- Navigate to the backend directory.
+- Update `application.properties` with your local MySQL database credentials.
+- Run the Spring Boot application:
+```bash
+./mvnw spring-boot:run
+```
 
-🔴 Red → Overcrowded (some standing)
+### 3️⃣ Frontend Setup (React)
+- Navigate to the frontend directory.
+- Install dependencies:
+```bash
+npm install
+```
+- Start the React app:
+```bash
+npm start
+```
 
-Dynamic Bus Scheduling
-Admins can reallocate unlinked buses to busy routes based on the feedback received.
+---
 
-# Admin Controls
+## Dependencies & Configurations
 
-Manage (Create, Update, Delete, Read) members (students, drivers).
+✅ **Backend**
+- Java 17+
+- Spring Boot
+- MySQL Database
+- Maven
 
-Modify routes and stops as needed.
+✅ **Frontend**
+- Node.js
+- React.js
+- Axios (for API calls)
 
-Assign buses to routes and monitor feedback.
+✅ **Authentication**
+- JWT (JSON Web Token) for secure role-based access
 
-# Student Dashboard
+---
 
-View bus routes, stops, and real-time availability.
+## Project Features
 
-Check bus locations inside the campus.
+- Live seat availability updates from drivers (Green, Orange, Red status).
+- Dynamic bus scheduling based on real-time demand.
+- Admin panel for managing routes, buses, members, and feedback.
+- Student dashboard to check bus routes, stops, and seat availability.
+- Secure login system for Admin, Driver, and Student roles.
 
-#Secure Login System
-Role-based access for Admin, Driver, and Student users.
+---
 
-# Technology Stack
-Backend → Spring Boot, REST APIs
+## Screenshots / Demo
 
-Frontend → React.js, HTML, CSS
+### Admin Dashboard
+![Admin Dashboard Screenshot](screenshots/admin_dashboard.png)
 
-Database → MySQL
+### Driver Feedback Panel
+![Driver Panel Screenshot](screenshots/driver_panel.png)
 
-Authentication → JWT (or session-based, depending on your implementation)
+### Student Bus View
+![Student Dashboard Screenshot](screenshots/student_dashboard.png)
 
-Optional Enhancements → WebSockets (for real-time updates), Google Maps API (for live bus location)
+*(If you have actual screenshots, place them in a `/screenshots` folder and replace the image file names above.)*
 
-# How It Works
-Driver logs in → sends live feedback on passenger load.
+---
 
-Admin monitors feedback → reallocates buses if needed.
+## Important Notes
+- Make sure your local MySQL database is running and matches the schema provided in the project.
+- If using external APIs or third-party services, ensure they are properly configured (API keys, if any).
+- Keep your GitHub repository public or **accessible** during the evaluation period.
 
-Student logs in → checks their assigned bus, route, stop, and seat availability.
+---
 
-System ensures everyone knows where to go, reducing rush and improving the commute experience.
+✅ **GitHub Repository Link (to submit):** [Insert your GitHub link here]
 
